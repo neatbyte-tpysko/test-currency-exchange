@@ -9,7 +9,7 @@ export const Input = ({ value, resolveInputValue, setInputValue }) => {
       value={value}
       onChange={(e) => {
         setInputValue(e.target.value);
-        resolveInputValue(e);
+        resolveInputValue(e.target.value);
       }}
     />
   );

@@ -32,46 +32,46 @@ function App() {
       });
   }, []);
 
-  const resolveInitialInput = (e) => {
+  const resolveInitialInput = (value) => {
     if (
       (firstСurrency === "UAH" && secondСurrency === "UAH") ||
       (firstСurrency === "USD" && secondСurrency === "USD") ||
       (firstСurrency === "EURO" && secondСurrency === "EURO")
     ) {
-      setFinalСurrency(e.target.value * 1);
+      setFinalСurrency(value * 1);
     } else if (firstСurrency === "UAH" && secondСurrency === "USD") {
-      setFinalСurrency(e.target.value / UAH);
+      setFinalСurrency(value / UAH);
     } else if (firstСurrency === "UAH" && secondСurrency === "EURO") {
-      setFinalСurrency(e.target.value / EURO);
+      setFinalСurrency(value / EURO);
     } else if (firstСurrency === "USD" && secondСurrency === "EURO") {
-      setFinalСurrency(e.target.value * USD);
+      setFinalСurrency(value * USD);
     } else if (firstСurrency === "USD" && secondСurrency === "UAH") {
-      setFinalСurrency(e.target.value * UAH);
+      setFinalСurrency(value * UAH);
     } else if (firstСurrency === "EURO" && secondСurrency === "UAH") {
-      setFinalСurrency(e.target.value * EURO);
+      setFinalСurrency(value * EURO);
     } else if (firstСurrency === "EURO" && secondСurrency === "USD") {
-      setFinalСurrency(e.target.value / USD);
+      setFinalСurrency(value / USD);
     }
   };
-  const resolveFinalInput = (e) => {
+  const resolveFinalInput = (value) => {
     if (
       (firstСurrency === "UAH" && secondСurrency === "UAH") ||
       (firstСurrency === "USD" && secondСurrency === "USD") ||
       (firstСurrency === "EURO" && secondСurrency === "EURO")
     ) {
-      setInitialСurrency(e.target.value * 1);
+      setInitialСurrency(value * 1);
     } else if (firstСurrency === "UAH" && secondСurrency === "USD") {
-      setInitialСurrency(e.target.value * UAH);
+      setInitialСurrency(value * UAH);
     } else if (firstСurrency === "UAH" && secondСurrency === "EURO") {
-      setInitialСurrency(e.target.value * EURO);
+      setInitialСurrency(value * EURO);
     } else if (firstСurrency === "USD" && secondСurrency === "EURO") {
-      setInitialСurrency(e.target.value * USD);
+      setInitialСurrency(value * USD);
     } else if (firstСurrency === "USD" && secondСurrency === "UAH") {
-      setInitialСurrency(e.target.value / UAH);
+      setInitialСurrency(value / UAH);
     } else if (firstСurrency === "EURO" && secondСurrency === "UAH") {
-      setInitialСurrency(e.target.value / EURO);
+      setInitialСurrency(value / EURO);
     } else if (firstСurrency === "EURO" && secondСurrency === "USD") {
-      setInitialСurrency(e.target.value * USD);
+      setInitialСurrency(value * USD);
     }
   };
 
